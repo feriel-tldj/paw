@@ -1,0 +1,120 @@
+body {
+  background-image: url("C:\Users\21379\to-do-list-app\src\PAWWW BG.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #282875;
+  
+}
+
+*{
+  box-sizing: border-box;
+}
+main{
+  max-width: 300px;
+  margin: 20px auto;
+}
+h1 {
+  font-size: 55px; 
+  ;
+}
+
+form{
+  border: 3px solid #282875;
+  border-radius: 10px;
+  padding: 5px;
+  display:flex;
+}
+form input[type="text"] {
+  background: none;
+  color:#282875;
+  border:0;
+  padding: 0 8px;
+  display:block;
+  width: 100%;
+  font-size: 25px; 
+}
+form button{
+  background-color: #C0C0E3;
+  border:0;
+  border-radius: 6px;
+  cursor:pointer;
+}
+
+div.task{
+  background-color: #C0C0E3;
+  border-radius: 10px;
+  padding: 5px 9px;
+  margin-top: 5px;
+  display:flex;
+  align-items: center;
+  transition: opacity .3s linear;
+  font-size: 25px;
+  font-weight: 500;
+}
+div.task svg{
+  height: 20px;
+  margin-right: 6px;
+  fill: #282875;
+}
+div.task.done{
+  opacity: 0.3;
+}
+div.task-name, div.task form{
+  flex-grow:1;
+}
+div.task span{
+  position:relative;
+}
+div.task span:before{
+  content:'';
+  display:block;
+  width:0;
+  height:1px;
+  background-color: #7D6E83;
+  position:absolute;
+  top: 10px;
+  transition: width .1s linear;
+}
+div.task.done span:before{
+  width: 100%;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+div.checkbox{
+  display:flex;
+  align-items: center;
+}
+
+button.trash{
+  background:none;
+  border:none;
+  display:flex;
+  cursor:pointer;
+}
+button.trash svg{
+  fill: #F8EDE3;
+  height: 14px;
+}
+div.task input{
+  border: 2px solid #F8EDE3;
+  border-radius:5px;
+  padding: 2px 4px;
+}
+
+.clock-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border: 4px solid #282875;
+  border-radius: 10px;
+  font-size: 60px;
+  font-weight: 500;
+  color: #282875;
+  align-items: center;
+}
